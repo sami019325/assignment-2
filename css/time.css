@@ -59,6 +59,17 @@ article {
     height: 30px;
 }
 
+#view-all-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#view-all {
+    display: none;
+}
+
+
 
 /* ==============================================================================
  ============================================================================== 
@@ -70,6 +81,24 @@ article {
 
     article {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #view-all {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 200px;
+        color: #fff;
+        background: #DD0000;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    #view-all:hover {
+        background-color: #088a03;
     }
 }
 

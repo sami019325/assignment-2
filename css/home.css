@@ -12,7 +12,7 @@ a {
 }
 
 :root {
-    --btnAction: #088a03
+    --btnAction: #088a03;
 }
 
 /* ==============================================================================
@@ -54,15 +54,12 @@ a {
     padding-left: 5%;
     padding-right: 2%;
     padding-bottom: 50px;
-    /* background-color: aquamarine; */
 }
 
 .wird-fifyPrcnt2 {
     width: 45%;
     padding-left: 5%;
     padding-right: 2%;
-    /* padding-bottom: 50px; */
-    /* background-color: aquamarine; */
 }
 
 .wird-fifyPrcnt2 img {
@@ -81,7 +78,6 @@ a {
 
     20% {
         background: linear-gradient(260.3deg, #E20D0D -21.75%, rgba(226, 13, 13, 0.15) 21.78%, rgba(226, 13, 13, 0) 91.19%);
-        /* opacity: 100%; */
     }
 
     40% {
@@ -100,18 +96,10 @@ a {
     85% {
         background: #DD0000;
         border: 1px solid rgb(255, 227, 68);
-        /* border: 2px solid rgb(255, 227, 68); */
-        /* padding: 8px 18px; */
     }
 
     90% {
         opacity: 70%;
-        /* padding: 8px 18px; 
-    } 
-
-    95% {
-        background: #DD0000;
-        /* padding: 8px 18px; */
     }
 
     100% {
@@ -142,7 +130,7 @@ a {
 }
 
 aside {
-    /* width: 200px; */
+    height: 200px;
     background: #161616;
     border-radius: 10px;
     display: flex;
@@ -160,7 +148,7 @@ aside {
     align-items: center;
     color: #161616;
     font-weight: 900;
-    height: 20%;
+    height: 40px;
 }
 
 .btn:hover {
@@ -241,7 +229,7 @@ footer {
 }
 
 #footer-fonts {
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,6 +302,7 @@ footer {
 
     aside {
         background-color: #fff;
+        height: 110px;
         width: 90%;
         border-radius: 10px;
         display: flex;
@@ -422,6 +411,7 @@ footer {
     aside {
         background-color: #fff;
         width: 90%;
+        height: 50px;
         border-radius: 10px;
         display: flex;
         flex-direction: row;
