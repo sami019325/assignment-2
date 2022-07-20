@@ -1,0 +1,258 @@
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --btnAction: #088a03
+}
+
+/* ==============================================================================
+ ============================================================================== 
+                                                 This is header section  
+ =============================================================================== 
+ =============================================================================== */
+#header {
+    background: #161616;
+    color: white;
+    width: 80%;
+    margin-top: 50px;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#flex-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+#btn-animationOfHdr {
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: liveBtn 3s infinite ease;
+    border: 1px solid #161616;
+}
+
+#btn-animationOfHdr:hover {
+    background-color: var(--btnAction);
+    animation: none;
+    cursor: pointer;
+}
+
+
+.wird-fifyPrcnt {
+    width: 45%;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 50px;
+    /* background-color: aquamarine; */
+}
+
+.wird-fifyPrcnt2 {
+    width: 45%;
+    padding-left: 5%;
+    padding-right: 2%;
+    /* padding-bottom: 50px; */
+    /* background-color: aquamarine; */
+}
+
+.wird-fifyPrcnt2 img {
+    width: 100%;
+}
+
+.color-wite {
+    color: #fff;
+}
+
+
+@keyframes liveBtn {
+    0% {
+        background: linear-gradient(94.94deg, #E20D0D 3.7%, rgba(226, 13, 13, 0.15) 48.84%, rgba(226, 13, 13, 0) 104.47%);
+    }
+
+    20% {
+        background: linear-gradient(260.3deg, #E20D0D -21.75%, rgba(226, 13, 13, 0.15) 21.78%, rgba(226, 13, 13, 0) 91.19%);
+        /* opacity: 100%; */
+    }
+
+    40% {
+        background: linear-gradient(275.28deg, #E20D0D 0.76%, rgba(226, 13, 13, 0.15) 42.91%, rgba(226, 13, 13, 0) 110.14%);
+        border: 1px solid #161616;
+    }
+
+    60% {
+        background: linear-gradient(277.06deg, #E20D0D 24.51%, rgba(226, 13, 13, 0.15) 69.82%, rgba(226, 13, 13, 0) 100%);
+    }
+
+    80% {
+        background: linear-gradient(8.52deg, #E20D0D 0.84%, rgba(226, 13, 13, 0.15) 156.58%, rgba(226, 13, 13, 0) 174.36%);
+    }
+
+    85% {
+        background: #DD0000;
+        border: 1px solid rgb(255, 227, 68);
+        /* border: 2px solid rgb(255, 227, 68); */
+        /* padding: 8px 18px; */
+    }
+
+    90% {
+        opacity: 70%;
+        /* padding: 8px 18px; 
+    } 
+
+    95% {
+        background: #DD0000;
+        /* padding: 8px 18px; */
+    }
+
+    100% {
+        background: linear-gradient(94.94deg, #E20D0D 3.7%, rgba(226, 13, 13, 0.15) 48.84%, rgba(226, 13, 13, 0) 104.47%);
+    }
+
+}
+
+
+/* ==============================================================================
+ ============================================================================== 
+                                                 This is aside section  
+ =============================================================================== 
+ =============================================================================== */
+#container-of-main {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+}
+
+#btn-active {
+    background-color: #DD0000;
+    cursor: pointer;
+}
+
+aside {
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.btn {
+    background: #FFFFFF;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #161616;
+    font-weight: 900;
+    height: 20%;
+}
+
+.btn:hover {
+    background-color: #DD0000;
+    cursor: pointer;
+}
+
+
+/* ==============================================================================
+ ============================================================================== 
+                                                 This is main section  
+ =============================================================================== 
+ =============================================================================== */
+
+main {
+    margin-top: 0;
+    height: 312px;
+    flex-grow: 1;
+    padding: 0 0 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.color-gay {
+    color: #4D4D4D;
+}
+
+.match-div {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.match-div:hover {
+    background-color: #f1eeee;
+}
+
+.team-vs-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+
+.team-vs-div p {
+    text-align: center;
+}
+
+/* ==============================================================================
+ ============================================================================== 
+                                                 This is main section  
+ =============================================================================== 
+ =============================================================================== */
+
+
+footer {
+    height: 300px;
+    left: 0px;
+    top: 1464px;
+    padding-top: 50px;
+    background: #161616;
+    text-align: center;
+}
+
+#footer-div {
+    width: 90%;
+    margin: auto;
+}
+
+#footer-div hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer-fonts {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lower-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fontawesome-icn-link {
+    color: #b3b3b3;
+    padding: 10px;
+}
+
+.fontawesome-icn-link:hover {
+    color: white;
+}
