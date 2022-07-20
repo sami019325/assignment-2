@@ -137,6 +137,7 @@ a {
 
 #btn-active {
     background-color: #DD0000;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -165,6 +166,7 @@ aside {
 .btn:hover {
     background-color: #DD0000;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 
@@ -271,10 +273,6 @@ footer {
     }
 
     #header {
-        /* background: #161616;
-        color: white;
-        width: 80%;
-        margin-top: 50px; */
         margin: 50px auto;
         border-radius: 20px;
         display: flex;
@@ -290,24 +288,15 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /* padding-left: 5%;
-        padding-right: 2%;
-        padding-bottom: 50px; */
-        /* background-color: aquamarine; */
     }
 
     .wird-fifyPrcnt2 {
         width: 90%;
-        /* padding-left: 5%;
-        padding-right: 2%; */
-        /* padding-bottom: 50px; */
-        /* background-color: aquamarine; */
     }
 
     #container-of-main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-rows: 400px repeat(1, 1fr); */
         column-gap: 30px;
         margin-top: 0;
         justify-content: center;
@@ -349,9 +338,16 @@ footer {
         border: 1px solid #E8E8E8;
     }
 
-    #btn-active {
-        background-color: #fff;
 
+
+    #btn-active {
+        background-color: #ffffff;
+        color: #161616;
+    }
+
+    #btn-active:hover {
+        background-color: #DD0000;
+        color: #fff;
     }
 
     #btn-active2 {
@@ -374,5 +370,113 @@ footer {
         justify-content: space-around;
     }
 
+
+}
+
+
+/* ==============================================================================
+ ============================================================================== 
+                                                 tab or medium devices   
+ =============================================================================== 
+ =============================================================================== */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .wird-fifyPrcnt {
+        width: 45%;
+    }
+
+    .wird-fifyPrcnt2 {
+        width: 45%;
+    }
+
+    #container-of-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    aside {
+        background-color: #fff;
+        width: 90%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .btn {
+        background: #FFFFFF;
+        width: 150px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: #161616;
+        font-weight: 900;
+        padding: 0;
+        height: 40px;
+        border: 1px solid #E8E8E8;
+    }
+
+
+
+    #btn-active {
+        background-color: #ffffff;
+        color: #161616;
+    }
+
+    #btn-active2 {
+        background-color: #DD0000;
+        color: #fff;
+    }
+
+    #btn-active:hover {
+        background-color: #DD0000;
+        color: #fff;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #lower-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #lower-footer p {
+        margin: 30px;
+        text-align: center;
+    }
 
 }
